@@ -1,0 +1,134 @@
+.hp-tm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .hp-tm-l{
+    .team-name{
+      color: #e63462;
+      font-size: 25px;
+      font-weight: 500;
+      margin-top: 25px;
+    }
+    .team-role{
+      font-size: 20px;
+      font-family: Days One;
+      margin: 10px 0;
+    }
+    .team-description{
+      font-size: 16px !important;
+      padding: 0 15px;
+    }
+  }
+  img {
+    
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    border: none;
+    box-shadow: -12px 11px 23px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -12px 11px 23px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -12px 11px 23px 3px rgba(0, 0, 0, 0.75);
+  }
+  h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+  }
+  p {
+    font-size: 25px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .hp-tm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    img {
+      width: 50%;
+      box-shadow: 0 0 0 15px gray;
+      height: auto;
+      border-radius: 10px;
+      border: none;
+      box-shadow: -12px 11px 23px 3px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: -12px 11px 23px 3px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -12px 11px 23px 3px rgba(0, 0, 0, 0.75);
+    }
+    > .hp-tm-l {
+      text-align: center;
+      margin: 0 5% 30px;
+    }
+    h2 {
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 1px;
+    }
+    p {
+      font-size: 15px;
+      margin: 0;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  :root {
+    --content-radius: 75px;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 2500px) {
+  .hp-tm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 90%;
+      box-shadow: 0 0 0 15px gray;
+      height: auto;
+      border-radius: 10px;
+      border: none;
+      box-shadow: -12px 11px 23px 3px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: -12px 11px 23px 3px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -12px 11px 23px 3px rgba(0, 0, 0, 0.75);
+    }
+    h2 {
+      font-size: 35px;
+      text-transform: uppercase;
+      margin-bottom: 1px;
+    }
+    p {
+      font-size: 25px;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 2500px) {
+  .hp-tm {
+    img {
+      width: 90%;
+      height: auto;
+      border-radius: 100px;
+      border: 10px solid var(--light-blue);
+      box-shadow: -32px 31px 43px 23px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: -32px 31px 43px 23px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -32px 31px 43px 23px rgba(0, 0, 0, 0.75);
+    }
+    h2 {
+      font-size: 80px;
+      text-transform: uppercase;
+      margin-bottom: 1px;
+    }
+    p {
+      font-size: 40px;
+      margin: 0 0 50px 0;
+    }
+  }
+}

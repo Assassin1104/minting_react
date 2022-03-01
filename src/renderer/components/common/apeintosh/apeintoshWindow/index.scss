@@ -1,0 +1,31 @@
+.apeintosh-window {
+  display: flex;
+  position: relative;
+  justify-content: center;
+
+  img {
+    width: 60%;
+  }
+  .apeintosh-window-bg {
+    height: 100%;
+  }
+
+  .apeintosh-window-ape {
+    width: 35%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .apeintosh-window-content {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    * {
+      font-family: var(--console-font);
+    }
+  }
+}

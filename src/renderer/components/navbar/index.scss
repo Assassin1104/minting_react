@@ -1,0 +1,247 @@
+.parent-navbar{
+  width: 100%;
+  background-color: var(--dark-blue);
+.navbar {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  height: 104px;
+  padding: 0 100px;
+  margin: 0 auto;
+  position: relative;
+  background-color: var(--dark-blue);
+  .nav-connect-wrap{
+    button:hover{
+      box-shadow: 0 0 20px #fff;
+      transition: all 0.2s linear 0s;
+    }
+    
+  }
+  .header-items{
+    display: flex;
+    z-index: 1000;
+    a{
+      color: white;
+      font-family: Days One;
+      font-size: 16px;
+      padding-right: 26px;
+      text-decoration: none;
+    }
+  }
+  svg {
+    width: 25%;
+    height: auto;
+  }
+  .nav-drawer {
+    overflow-y: hidden !important;
+  }
+  .left-nav-main {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .left-nav {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      .socials{
+        width: 140px;
+        height: 26px;
+        display: flex;
+        margin-right: 50px;
+        justify-content: space-evenly;
+        .parent-icons{
+          width: 26px;
+          height: 26px;
+        }
+        img{
+          width: 24px;
+          height: 24px;
+        }
+        img:hover{
+          width: 26px;
+          height: 26px;
+        }
+      }
+      #ham-icon{
+        width: 25px !important;
+        display: none;
+        margin-top: 27px;
+      }
+      button{
+        width: 160px;
+        height: 52px;
+      }
+    }
+  }
+  .nav-list,
+  #ham-icon,
+  div {
+    justify-self: end;
+  }
+}
+}
+
+.monke {
+  width: 30%;
+  background-color: var(--light-blue);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1%;
+  > svg {
+    width: 25%;
+    height: auto;
+  }
+}
+.main-logo{
+  position: absolute;
+  right: 0;
+  left: 0;
+  .p{
+    color: white !important;
+    font-family: Days One;
+    font-size: 25px;
+  }
+}
+.logo-letters{
+  color: white;
+}
+.logo {
+  width: 30%;
+  background-color: var(--dark-blue);
+  height: 100vh;
+}
+
+.MuiDrawer-paperAnchorRight {
+  width: 100%;
+  background-color: var(--darker-blue) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  flex-direction: row !important;
+  overflow-y: hidden !important;
+}
+
+@media (max-width: 576px) {
+  .main-logo{
+    p{
+      font-weight: bold;
+      font-size: 20px;
+      font-family: Days One;
+      margin-top: 50px;
+    }
+  }
+  .MuiDrawer-paperAnchorRight {
+    width: 100%;
+  }
+  .navbar {
+    display: grid;
+    grid-template-columns: 40% 60% !important;
+    .left-nav{
+      padding-left: 15px;
+    }
+    svg {
+      width: 80px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .header-items{
+    display: none !important;
+  }
+  .socials{
+    display: none !important;
+  }
+  #ham-icon{
+    display: block !important;
+  }
+  .connect-button{
+    display: none !important;
+  }
+  .nav-connect-wrap{
+    display: none;
+  }
+  .left-nav{
+    justify-content: start !important;
+    padding-left: 50px;
+  }
+  .MuiDrawer-paperAnchorRight {
+    width: 100%;
+  }
+  .navbar {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 10px;
+    svg {
+      width: 80px;
+    }
+  }
+}
+
+.open-menu {
+  transform: translateX(-90%);
+}
+
+@media (max-width: 992px) {
+  .navbar{
+    padding: 0 10px !important;
+  }
+  .open-menu {
+    transform: translateX(-90%);
+  }
+  .left-nav-main {
+    width: 100% !important;
+    height: 50%;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    .left-nav {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .open-menu {
+    transform: translateX(-30%);
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  :root {
+    --content-radius: 75px;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 2500px) {
+  .main-logo{
+    p{
+      font-weight: bold;
+      font-size: 25px;
+      font-family: 'Days One';
+    }
+  }
+  :root {
+    --content-radius: 75px;
+  }
+}
+
+@media (min-width: 2500px) {
+  .open-menu {
+    transform: translateX(-55%);
+  }
+}
